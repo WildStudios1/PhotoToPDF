@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Photos to 4x6 PDF</title>
+	<style>
+		body {
+			font-family: 'Trebuchet MS', sans-serif;
+			background-color:#C6C6C6
+		}
+		div {
+			width:400px;
+			padding:5px;
+			border-style:dotted;
+			border-width:3px;
+			border-color:black;
+		}
+	</style>
+</head>
+<body>
+<center>
+<br>
+<h1>Photos to 4x6 PDF</h1>
+<p style="line-height: 5px;">Upload photos and click generate to create a pdf file perfect for printing 2 photos on one 4x6 photo page. Ensure all photos are in 4:3 aspect ratio.</p>
+<p style="line-height: 10px;">Generation may take up to 10 seconds. File will download automatically once generation is completed after clicking "Generate PDF".
+<br>
+	<div>
+		<h2 style="line-height: 1px;">Upload Your Images</h2>
+		<input type="file" id="imageUpload" accept="image/*" multiple>
+		<button onclick="generatePDF()">Generate PDF</button>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+		<script src="app.js"></script>
+	</div>
+<center>
+</body>
+</html>
